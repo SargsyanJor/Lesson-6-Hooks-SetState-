@@ -1,0 +1,27 @@
+.sectionBag {
+  padding-left: 32px;
+}
+
+.bag {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 300px;
+  background-color: red;
+  padding: 20px;
+  align-items: flex-end;
+  font-size: 25px;
+}
+
+.bagItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.items {
+  width: 60px;
+  height: 60px;
+  background-color: rebeccapurple;
+  border-radius: 15px;
+}

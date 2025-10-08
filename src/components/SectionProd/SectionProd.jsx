@@ -1,8 +1,12 @@
+import React, { useState } from "react";
+import AddButton from "./AddButton/AddButton";
+
+
 import "./SectionProd.css";
-import { IoBagAddSharp } from "react-icons/io5";
 
 function SectionProd(props) {
-  console.log(props);
+
+  const [change, setChange] = useState(true)
 
   return (
     <>
@@ -17,8 +21,8 @@ function SectionProd(props) {
                     <li><h1>{elm.category}</h1></li>
                     <li><p>{elm.title}</p></li>
                     <li><h2>$ {elm.price}</h2></li>
-                    <li>
-                      <IoBagAddSharp className="addProd" />
+                    <li id="addProd">
+                      <AddButton change={change} setChange={setChange} />
                     </li>
                   </div>
 
